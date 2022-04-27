@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+		demo
+		</title>
+		<link rel="stylesheet" href="">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+				<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<style type="text/css">
+		#bgImage{
+			background:  url('bgnew3.jpg') no-repeat ;
+			background-size: 100% 100vh;
+		}
+
+		@media only screen and (max-width: 600px){
+			
+			#button{
+				display: none;
+			}
+			
+		}
+
+
+
+
+		.login-form {
+		width: 90%;
+		margin-top: 0%;
+		margin-left: 5%;
+		margin-bottom: 15px;
+		background: #f7f7f7;
+		box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+		padding: 30px;
+		 font-family: 'Abril Fatface', cursive; 
+
+		}
+		.login-form form {
+		margin-bottom: 15px;
+		background: #f7f7f7;
+		/* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+		padding: 30px;
+		}
+		.login-form h2 {
+		margin: 0 0 15px;
+		}
+		.form-control, .btn {
+		min-height: 38px;
+		border-radius: 2px;
+		}
+		.input-group-addon .fa {
+		font-size: 20px;
+		}
+		.btn {
+		font-size: 15px;
+		font-weight: bold;
+		}
+		.bottom-action {
+		font-size: 14px;
+		}
+		#text{
+			color: white;
+				text-shadow:  0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+		0.05em 0.005em 0 rgba(0, 0, 0, 1);
+		}
+		@keyframes bop {
+		0% {
+		transform: scale(0.9);
+		}
+		50%,
+		100% {
+		transform: scale(1);
+		}
+		}
+		@keyframes bopB {
+		0% {
+		transform: scale(0.9);
+		}
+		80%,
+		100% {
+		transform: scale(1) rotateZ(-3deg);
+		}
+		}
+		#hday_title{
+				text-align: center;
+				display: none;
+				font-family: 'Lobster Two', cursive;
+				font-size: 5.2em;
+				color: white;
+				
+				text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+		0.05em 0.005em 0 rgba(0, 0, 0, 1);
+		/* animation: titleAnimation 4s linear 0s infinite ; */
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		
+		white-space: nowrap; /* Keeps the content on a single line */
+		
+		animation:
+		typing 15s steps(300, end),titleAnimation 6s linear 0s infinite;
+		}
+				
+		span {
+		transform: scale(0.9);
+		display: inline-block;
+		}
+		span:first-child {
+		animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+		alternate;
+		}
+		span:last-child {
+		animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+		infinite alternate;
+		}
+				
+			
+		@keyframes titleAnimation {
+				0%{
+					font-size: 5.2em;
+				}
+				25%{
+					font-size: 5.4em;
+				}
+				50%{
+					font-size: 5.6em;
+				}
+				75%{
+					font-size: 5.4em;
+				}
+				100% {
+					font-size: 5.2em;
+				}
+			}
+		@keyframes gifAnimation {
+				from{transform: translateX(0em);}
+				to {
+					transform: translateX(10em);
+				}
+			}
+			@keyframes revgifAnimation {
+				from{transform: translateX(0em);}
+				to {
+					transform: translateX(-20em);
+				}
+			}
+			@keyframes princessAnime {
+				from {
+					transform: translateX(0px);
+				}
+				to {
+					transform: translateX(-100px);
+				}
+			}
+			
+			
+			.img1{
+				height: 130px;
+				animation: gifAnimation 6s linear 0s 1;
+				animation-fill-mode: forwards;
+				position: relative;
+				display: none;
+				
+			}
+			.img2{
+				
+				height: 185px;
+				display: none;
+				animation: gifAnimation 6s linear 0s infinite;
+				animation-fill-mode: forwards;
+				position: relative;
+				
+			}
+			.img3{
+				
+				height: 200px;
+				display: none;
+				animation: gifAnimation 6s linear 0s infinite;
+				animation-fill-mode: forwards;
+				position: relative;
+				
+				
+			}
+			.img4{
+				
+				height: 220px;
+				display: none;
+				animation: gifAnimation 6s linear 0s infinite;
+				animation-fill-mode: forwards;
+				position: relative;
+				
+				
+			}
+			.img5{
+				
+				height: 240px;
+				display: none;
+				animation: gifAnimation 6s linear 0s;
+				animation-fill-mode: forwards;
+				position: relative;
+				
+				
+			}
+			.img6{
+				
+				height: 260px;
+				display: none;
+				animation: gifAnimation 6s linear 0s;
+				animation-fill-mode: forwards;
+				position: relative;
+				
+				
+			}
+			.img7{
+				
+				height: 270px;
+				display: none;
+				animation: gifAnimation 6s linear 0s;
+				animation-fill-mode: forwards;
+				position: relative;
+				
+				
+			}
+			.princess1{
+				height: 320px;
+				display: none;
+				animation: princessAnime 8s linear 0s;
+				animation-fill-mode: forwards;
+				
+			}
+			.typewriter h1 {
+				display: none;
+				/*left: 20em;*/
+
+				text-align: center;
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		border-right: .10em solid transparent; /* The typwriter cursor */
+		white-space: nowrap; /* Keeps the content on a single line */
+		/*margin: 0 auto; */ /* Gives that scrolling effect as the typing happens */
+		animation:
+		typing 15s steps(3500, end)
+		
+		}
+		/* The typing effect */
+		@keyframes typing {
+		from { width: 10% }
+		to { width: 100% }
+		}
+		@keyframes revtyping {
+		from { width: 100% }
+		to { width: 10% }
+		}
+		
+		</style>
+		<script type="text/javascript">
+			
+			$(function(){
+				$("#button").click(function(){
+					$("#cont").hide();
+					document.getElementById('music1').play();
+					$("#heading").fadeIn(1000);
+					$("#heading").delay(1000).fadeOut(2500,0,function(){
+				$("#hday_title").delay(700).fadeIn(1000,function(){
+
+				$(".typewriter h1").delay(1000).fadeIn(1000);
+				$(".img1").delay(1000).fadeIn(600).fadeOut(1500,0,function(){
+					
+					$(".img2").fadeIn(600).delay(300).fadeOut(1500,0,function(){
+						
+						$(".img3").fadeIn(600).delay(300).fadeOut(1500,0,function(){
+							
+						$(".img4").fadeIn(600).delay(300).fadeOut(1500,0,function(){
+							
+							$(".img5").fadeIn(600).delay(300).fadeOut(1500,0,function(){
+							
+							$(".img6").fadeIn(600).delay(300).fadeOut(1500,0,function(){
+							
+							// $(".img7").fadeIn(1000).delay(300).fadeOut(2500,function(){
+								$("#gif_divison").animate({'alignContent' : 'center','height':'+=100px','width':'400px'},'slow');
+								$(".princess1").fadeIn(1000,function(){
+									// $(this).delay(8000).animate({'margin-left':'+=500px'},'slow');
+									
+				
+										// 	$("#text").delay(9000).animate({'margin-top':'-=190px','margin-left':'-=100px'},'slow');
+										
+										$(".princess1").delay(4500).fadeOut(2000,function(){
+											$("#bgImage").fadeOut(300,function(){
+												$("#bgImage").css({
+
+												"background":"url(bgf3.gif) right bottom no-repeat,url(bgf2.gif) left bottom no-repeat,url(bgf2.gif) right top no-repeat,url(bgf3.gif) left top no-repeat,url('mouniwed.png') center no-repeat",
+												"background-size":"40% 50%,40% 45%,40% 40%,40% 40%,cover"});
+												$("#bgImage").fadeIn(300);
+											});
+											
+											$("#text").fadeOut(2000,function(){
+													$("#hday_title").fadeIn(100,function(){
+														$("#hday_title").css({
+															"transform": "translate(0px,360%)"
+														});
+
+												});
+																										
+													$("#bgImage").delay(10000).fadeOut(3000,function(){
+														$("#hday_title").fadeOut(100,0,function(){
+
+														$("#bgImage").css({
+												"background":"url('bgnew3.jpg') no-repeat",
+												"background-size":"100% 100vh"});
+												$("#bgImage").fadeIn(3000);
+												$("#heading").fadeIn(100,function(){
+												$(this).html("<p>But Only Few Stories Have Beautiful Endings</p>");
+												});
+												$("#heading").delay(3500).fadeOut(3000,0,function(){
+												$("#gif_divison").css({'alignContent' : 'flex-end','height':'250px','width':'135px'});
+												$("#text").fadeIn(1000);
+												$("#name").css({
+													"animation":"revtyping 17s steps(3500, end)"
+												});
+
+
+												$(".img6").delay(100).fadeIn(600)
+												.css({
+												"animation": "revgifAnimation 6s linear 0s infinite",
+												"left":"65em",
+												"height":"260px",
+												}).fadeOut(2000,0,function(){
+					
+					$(".img5").fadeIn(600).delay(300).css({
+												"animation": "revgifAnimation 6s linear 0s infinite",
+												"left":"55em",
+												"height":"240px",
+												}).fadeOut(2000,0,function(){
+			
+						
+						$(".img4").fadeIn(600).delay(300).css({
+												"animation": "revgifAnimation 5s linear 0s infinite",
+												"left":"45em",
+												"height":"220px",
+												}).fadeOut(2000,0,function(){
+				
+							
+						$(".img3").fadeIn(600).delay(300).css({
+												"animation": "revgifAnimation 6s linear 0s infinite",
+												"left":"35em",
+												"height":"200px"
+												}).fadeOut(2000,0,function(){
+					
+							
+							$(".img2").fadeIn(600).css({
+												"animation": "revgifAnimation 6s linear 0s infinite",
+												"left":"25em",
+												"height":"180px"
+												}).delay(300).fadeOut(2000,0,function(){
+				
+							
+							$(".img1").fadeIn(600).delay(300).css({
+												"animation": "revgifAnimation 5s linear 0s infinite",
+												"left":"15em",
+												"height":"130px"
+												}).fadeOut(1500,0,function(){
+												
+
+
+							});
+							$("#text").fadeOut(2000,0,function(){
+							$("#heading").text("THE END");
+							$("#heading").fadeIn(1000,function(){
+							$("#shower").show();
+							});
+												
+												
+							});
+							
+							});
+							});
+							});
+							});
+							});
+
+
+
+
+
+
+
+
+
+
+											});
+
+													});
+											
+											});
+											
+										});
+
+									});
+										
+									
+								});
+					
+					});
+					});
+					});
+					});
+					});
+				});
+				});
+				});
+				});
+
+			});
+		</script>
+	</head>
+	<body id="bgImage">
+
+		
+		<div class="container text-center pt-3"  style="height:200px" >
+		
+		<h1 id="hday_title" style="color: #e6g2ff"><span>HAPPY </span><span> WEDDING </span></h1>
+		
+		
+	</div>
+	<div id="cont" class="container " style="top: 10%;width:50%; height: 50%; ">
+				
+				<div class="login-form" >
+					
+						<h2 class="text-center" style="color:hotpink;font-family: 'Abril Fatface', cursive; ">WELCOME</h2>
+						
+						
+						<div  class="text-center pb-3 rounded-top">
+			<button id="button"  class=" text-white rounded-top" style="width:200px;height:50px;background-color:pink;font-family:  'Lobster Two', cursive;">Open Present</button>
+		</div>
+
+						
+						
+					
+					
+				</div>
+			</div>
+			
+		
+		
+		<div class="row  align-items-end" id="gif_divison" style="height:250px;width:137px;margin-top: 0%;">
+			
+			<img  class=" img1 col" style=" left:5em" src="a1.gif">
+			
+			
+			<img  class="img2 col" style=" left:15em" src="a2.gif">
+			
+			
+			<img  class="img3 col" style=" left:25em" src="a4.gif">
+			
+			
+			<img  class="col img4" style=" left:35em" src="a3.gif">
+			
+			
+			<img  class="col img5" style=" left:45em" src="a5.gif">
+			
+			
+			<img  class="col img6" style=" left:55em" src="a6.gif">
+			
+			
+			<!-- <img  class="col img7" style=" left:65em" src="a7.gif"> -->
+			
+			
+			<img  class="col princess1" style=" left:600px;height:400px" src="princessf1.gif">
+			
+			
+		</div>
+		<div class="text-center pb-3 rounded-top">
+			<h1 id="heading" style="display: none;color:  pink;font-weight: bold; font-style: italic;margin-top: -10%;">Every Story has a Beautiful Start</h1>
+		</div>
+		
+		<!-- <div id="button"  class="text-center pb-3 rounded-top">
+			
+			<button id="remove" class=" text-white rounded-top" style="font-family: 'Lobster Two', cursive;width:200px;height:50px;background-color:pink;font-weight: bold;margin-top: 0%;"> The Start </button>
+		</div> -->
+		<div id="shower" style="display: none;" class="text-center pb-3 rounded-top">
+			<button class=" text-white rounded-top" style="width:100px;height:50px;background-color:pink"><a href="demo.html">Restart</a></button>
+		</div>
+		
+		<div class=" text-center typewriter container" id="text" style="font-family: 'Lobster Two', cursive;padding-left:+=100px" >
+			<h1 id="name" class="text-uppercase text-center" style="font-size: 5.7em;color: #e6f2ff;" >Mounika  Puvvula</h1>
+			
+		</div>
+		<audio id="music1">
+			<source src="SADBGM.mp3" type="audio/mpeg">
+		</audio>
+		
+	</div>
+	
+	
+	
+</body>
+</html>
